@@ -78,6 +78,7 @@ menu {
     -webkit-box-shadow: 4px 1px 5px -1px rgba(189,189,189,1);
     -moz-box-shadow: 4px 1px 5px -1px rgba(189,189,189,1);
     box-shadow: 4px 1px 5px -1px rgba(189,189,189,1);
+    position: relative; 
 
 }
 
@@ -128,6 +129,11 @@ article > p {
 .copyright {
 
     font-size: 9pt;
-    /* border: solid red; */
     text-align: center;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 8px;
 }
