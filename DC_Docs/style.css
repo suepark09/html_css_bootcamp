@@ -6,16 +6,21 @@
 html, body {
     margin:0;
     padding:0;
-    
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
     }
 
 h1 {
     display: inline-block;
     margin-left: 12px;
+    font-weight: 400;
+  
 }
 
 .intro-text {
     margin-bottom: -9px;
+    color: #8f8f8f;
+    font-size: 10pt;
 }
 
 .logo {
@@ -23,25 +28,31 @@ h1 {
 }
 
 .quote {
-    background-color: grey;
-    height: 110px;
+    background-color: #e2e2e2;
+    height: 3%;
     width: 100%; 
-    border-left: 5px solid black;
+    border-left: 5px solid #c3c3c1;
     margin-top: 35px;
     margin-bottom: 25px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 20px;
     padding-right: 20px;
+    font-style: italic;
+    color: #555555;
+    /* border: solid red; */
 }
 
 h2 {
     font-size: 9pt;
     padding-top: 15px;
+    font-weight: 700;
 }
 
 h3 {
     font-size: 12pt;
+    color: white;
+    font-weight: 400;
 }
 
 .container {
@@ -52,16 +63,21 @@ h3 {
         "sidebar header"
         "sidebar main"
         "sidebar main";
-        border: solid red;
+        /* border: solid red; */
    
 }
 
 menu {
     grid-area: sidebar; 
-    border: solid red;
-    padding: 0 30px 0 20px;
+    /* border: solid red; */
+    padding: 20px 30px 0 20px;
     margin-top: 0;
     height: 100%;
+    color:  #8f8f8f;
+    background-color: #555555;
+    -webkit-box-shadow: 4px 1px 5px -1px rgba(189,189,189,1);
+    -moz-box-shadow: 4px 1px 5px -1px rgba(189,189,189,1);
+    box-shadow: 4px 1px 5px -1px rgba(189,189,189,1);
 
 }
 
@@ -69,40 +85,49 @@ menu {
         list-style: none;
         padding-left: 0;
         margin-top: 50px;
-        border: solid red;
-        line-height: 33px;
+        /* border: solid red; */
+        line-height: 38px;
+        font-size: 12pt;
+        font-weight: 700;
 }
 
 .search {
     width: 100%;
-    border: solid grey;
-    background-color: yellowgreen;
+    border: solid 2px #8f8f8f;
+    background-color: #555555;
     height: 25px;
     padding-left: 5px;
 }
 
 .placeholder {
-   
-    margin-top: 0;
+   color: #8f8f8f;
+   margin: 1px;
+    font-size: 9pt;
 }
 
 header {
     grid-area: header; 
-    border: solid red;
-    margin: 0 20px 0 20px; 
+    /* border: solid red; */
+    margin: 20px 20px 0 20px; 
 }
 
 article {
    grid-area: main; 
-    border: solid red;
+    /* border: solid red; */
     margin: 0 20px 0 20px; 
+    background-color: #f4f4f4; 
     /* trbl */
 
+}
+
+article > p {
+    font-size: 11pt;
+    line-height: 17pt;
 }
 
 .copyright {
 
     font-size: 9pt;
-    border: solid red;
+    /* border: solid red; */
     text-align: center;
 }
